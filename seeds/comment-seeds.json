@@ -1,0 +1,37 @@
+[
+  {
+    "contents": "This post is boring!  Do not like it at all!",
+    "user_id": 9,
+    "post_id": 2
+  },
+  {
+    "contents": "This is good stuff!  I wish there was more",
+    "user_id": 8,
+    "post_id": 3
+  },
+  {
+    "contents": "I do not like it Sam I am, I do not like green eggs and ham...",
+    "user_id": 7,
+    "post_id": 4
+  },
+  {
+    "contents": "WOULD YOU LIKE THEM here or there?",
+    "user_id": 6,
+    "post_id": 1
+  },
+  {
+    "contents": "Fantastic info! Thank you... thank you...",
+    "user_id": 5,
+    "post_id": 3
+  },
+  {
+    "contents": "This is offensive!",
+    "user_id": 5,
+    "post_id": 1
+  },
+  {
+    "contents": "Where did you get this phone boloney?",
+    "user_id": 7,
+    "post_id": 2
+  }
+]

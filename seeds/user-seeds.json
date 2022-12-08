@@ -1,0 +1,58 @@
+[
+  {
+    "first_name": "tony",
+    "last_name": "shark",
+    "username": "ironman",
+    "email": "ironman@iron.com",
+    "password": "tonyshark"
+  },
+  {
+    "first_name": "hulk",
+    "last_name": "banner",
+    "username": "hulk",
+    "email": "hulkbanner@gmail.com",
+    "password": "banner"
+  },
+  {
+    "first_name": "black",
+    "last_name": "widow",
+    "username": "blackwidow",
+    "email": "blackwidow@gmail.com",
+    "password": "natasha"
+  },
+  {
+    "first_name": "Lucifer",
+    "last_name": "Jones",
+    "username": "devious12",
+    "email": "luciferjones@gmail.com",
+    "password": "hellAwaits123"
+  },
+  {
+    "first_name": "Jesus",
+    "last_name": "Christ",
+    "username": "godly777",
+    "email": "josechrist@gmail.com",
+    "password": "blissfullJoy"
+  },
+  {
+    "first_name": "Ron",
+    "last_name": "john",
+    "username": "hackeroo",
+    "email": "ronjohn@gmail.com",
+    "password": "!@#$%^&*()_+"
+  },
+  {
+    "first_name": "Carlos",
+    "last_name": "santana",
+    "username": "MasterBlaster",
+    "email": "carlossanta@gmail.com",
+    "password": "boom12345"
+  },
+  {
+    "first_name": "Fred",
+    "last_name": "wheeler",
+    "username": "TheWitcher",
+    "email": "wheelerfred@gmail.com",
+    "password": "niceshow1"
+  }
+]

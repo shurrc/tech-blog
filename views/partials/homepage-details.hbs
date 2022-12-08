@@ -1,0 +1,43 @@
+<div id="feed" class="mx-6 feed">
+  {{#each posts as |post|}}
+  <div class="card mt-1">
+      <div class="card-content post">
+             {{> human-post item=post}}
+      </div>
+    {{#each comments }}
+        <div class="comment_content">
+            <span class="content-boyz2">
+              {{contents}}
+            </span>
+            <div>
+              <p style="font-weight:bolder;" >{{user.username}}--{{formatDate createdAt}}</p>
+            </div>
+        </div>
+    {{/each}}
+         <footer class="card-footer">
+            <a class="card-footer-item js-modal-trigger" data-target="new-comment{{@index}}">{{totalComments}}
+              <span style="visibility:hidden"> -</span>
+              <i class="fa-regular fa-comment comment{{@index}}" postid="{{post.id}}" ></i>
+            </a>
+         </footer>
+  </div>
+   {{#if ../loggedIn }} 
+  <div id="new-comment{{@index}}" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head commentz">
+        <p class="modal-card-title">Comment</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body commentz">
+        <textarea class="textarea" placeholder="10 lines of textarea" rows="10" id="newcomment-text{{@index}}"></textarea>
+        <p class="comment-id{{@index}}" style="display:none;">{{id}}</p>
+      </section>
+      <footer class="modal-card-foot commentz">
+        <a class="is-success submit btn" loggedIn="{{../loggedIn}}" id="newcomment-submit">submit</a>
+      </footer>
+    </div>
+  </div>
+  {{/if}}
+  {{/each}}
+</div>

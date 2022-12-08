@@ -1,0 +1,142 @@
+<nav class="navbar has-background-primary is-flex is-justify-content-space-evenly" role="navigation" aria-label="main navigation">
+    <div class="navbar-item is-hoverable mt-1" id="navbar">
+      <div id="trapezoid">
+          <a class="sub-home" href="/">Home</a>
+          <div class="expandHome">
+            {{#if loggedIn}}
+            <a class="expandHome" href="/dashboard">Dashboard</a>
+            <a class="js-modal-trigger subnavbtn" data-target="new-post" id="create-post">New Post</a>
+            <a class="js-modal-trigger expandHome subnavbtn" data-target="sign-in" href="/logout">Logout</a>
+            {{else}}
+            <a class="js-modal-trigger expandHome subnavbtn" data-target="sign-in" id="loginLink">Login</a>
+            {{/if}}
+          </div>
+      </div>
+    </div>
+</nav>
+<div id="sign-in" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+
+    <header class="modal-card-head sign-in">
+      <p class="modal-card-title title">Log In</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+
+    <section class="modal-card-body sign-in">
+
+    {{!-- Log-in Username --}}
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="email" placeholder="Username" id="username-login">
+            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+            <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+          </p>
+        </div>
+
+    {{!-- Log-in Password --}}
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="password" placeholder="Password" id="password-login">
+            <span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+          </p>
+        </div>
+    </section>
+
+    {{!-- Log-in footer --}}
+    <footer class="modal-card-foot sign-in">
+      <a class=" login-button  btn p-2" id="login-submit">Log In</a>
+      <a class="js-modal-trigger btn login-button p-2" data-target="sign-up" id="signupLink">Sign Up</a>
+    </footer>
+  </div>
+</div>
+
+<div id="sign-up" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+
+    <header class="modal-card-head sign-up">
+      <p class="modal-card-title title">Sign Up</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+
+    {{!-- Sign-up body --}}
+    <section class="modal-card-body sign-up">
+
+        {{!-- First name --}}
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="name" placeholder="first name" id="first-name-signup">
+            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+            <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+          </p>
+        </div>
+
+        {{!-- Last name --}}
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="name" placeholder="last name" id="last-name-signup">
+            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+            <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+          </p>
+        </div>
+
+      {{!-- Username --}}
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="name" placeholder="username" id="username-signup">
+            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+            <span class="icon is-small is-right"><i class="fas fa-check"></i></span>
+          </p>
+        </div>
+
+      {{!-- Email --}}
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="email" placeholder="email" id="email-signup">
+            <span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+          </p>
+        </div>
+
+      {{!-- Password --}}
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="password" placeholder="Password" id="password-signup">
+            <span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+          </p>
+        </div>
+
+    </section>
+
+    {{!-- Sign up button --}}
+    <footer class="modal-card-foot submit_btn sign-up">
+      <a class="login-button btn p-1" id="signup-submit">Sign up</a>
+    </footer>
+  </div>
+</div>
+
+<div id="new-post" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+
+    <header class="modal-card-head new-post">
+      <p class="modal-card-title title">Share your thoughts</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+
+    <section class="modal-card-body new-post">
+      <textarea class="textarea" placeholder="Enter title here" rows="1" id="newpost-title"></textarea>
+    </section>
+
+    <section class="modal-card-body new-post">
+      <textarea class="textarea" placeholder="What's on your mind?" rows="10" id="newpost-text"></textarea>
+    </section>
+
+
+    {{!-- New post footer --}}
+    <footer class="modal-card-foot new-post">
+      <a class="is-success btn" id="newpost-submit">Create New Post</a>
+    </footer>
+
+  </div>
+</div>

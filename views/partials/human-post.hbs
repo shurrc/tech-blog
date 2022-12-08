@@ -1,0 +1,10 @@
+{{#with item}}
+<div class="human_content post-id{{id}}">
+  <div class="user_info">
+    <span class="firstname_lastname" style="font-weight:bold"></span>&nbsp;
+    <h1 class="human_post content-boyz">{{title}}</h1>
+    <span class="human_post content-boyz">{{contents}}</span>
+    <br>
+    <span class="username_date">   @{{user.username}} -- {{formatDate createdAt}}</span>
+</div>
+{{/with}}
